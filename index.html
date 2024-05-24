@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  />
+ </head>
+ <body>
+  <section class="hero is-primary is-bold">
+   <div class="hero-body">
+    <div class="container">
+     <h1 class="title">YI Digital Survey</h1>
+    </div>
+   </div>
+  </section>
+  <form id="form" class="container m-4 pl-4" method="POST">
+   <div class="field">
+    <label class="label">Your Name</label>
+    <div class="control">
+     <input
+      class="input"
+      type="text"
+      placeholder="Enter your name"
+      name="Name"
+     />
+    </div>
+   </div>
+
+
+   <div class="field">
+    <label class="label">Email</label>
+    <div class="control">
+     <input
+      class="input"
+      type="email"
+      placeholder="Enter your mail-id"
+      name="Email"
+     />
+    </div>
+   </div>
+
+   <div class="field">
+    <label class="label">Profession</label>
+    <div class="control">
+     <input
+      class="input"
+      type="text"
+      placeholder="Enter your Profession"
+      name="Profession"
+     />
+    </div>
+   </div>
+
+   <div class="field">
+    <label class="label">Date of Birth</label>
+    <div class="control">
+     <input
+      class="input"
+      type="date"
+      placeholder="Your Date of Birth"
+      name="DOB"
+     />
+    </div>
+   </div>
+
+   <div class="field">
+    <label class="label"> Do you use multi-factor authentication for online banking? </label>
+    <div class="control">
+     <label class="radio">
+      <input type="radio" name="authentication" value="Sometimes" /> Always
+     </label>
+     <label class="radio">
+      <input type="radio" name="authentication" value="Sometimes" /> Sometimes
+     </label>
+     <label class="radio">
+      <input type="radio" name="authentication" value="Never" /> Never
+     </label>
+    </div>
+   </div>
+
+   <div class="field">
+    <label class="label"> How frequently do you change your online banking passwords? </label>
+    <div class="control">
+     <label class="radio">
+      <input type="radio" name="bankpass" value="Every 3-6 months" /> Every 3-6 months
+     </label>
+     <label class="radio">
+      <input type="radio" name="bankpass" value="Annually" /> Annually
+     </label>
+     <label class="radio">
+      <input type="radio" name="bankpass" value="Rarely/Neve" /> Rarely/Neve
+     </label>
+    </div>
+   </div>
+
+   <div class="field">
+    <label class="label"> Do you use a secure payment method (e.g., PayPal, credit cards) for online shopping?
+    </label>
+    <div class="control">
+     <label class="radio">
+      <input type="radio" name="payment_method" value="Sometimes" /> Always
+     </label>
+     <label class="radio">
+      <input type="radio" name="payment_method" value="Sometimes" /> Sometimes
+     </label>
+     <label class="radio">
+      <input type="radio" name="payment_method" value="Never" /> Never
+     </label>
+    </div>
+   </div>
+
+   <div class="field">
+    <label class="label"> How often do you monitor your bank statements and credit card transactions? 
+    </label>
+    <div class="control">
+     <label class="radio">
+      <input type="radio" name="monitor_transaction" value="Daily" /> Daily
+     </label>
+     <label class="radio">
+      <input type="radio" name="monitor_transaction" value="Weekly" /> Weekly
+     </label>
+     <label class="radio">
+      <input type="radio" name="monitor_transaction" value="Monthly" /> Monthly
+     </label>
+     <label class="radio">
+      <input type="radio" name="monitor_transaction" value="Rarely" /> Rarely/Never
+     </label>
+    </div>
+   </div>
+
+
+
+
+   <div class="field">
+    <label class="label">Comments</label>
+    <div class="control">
+     <textarea
+      class="textarea"
+      placeholder="Your Comment on this Survey"
+      name="Comments"
+     ></textarea>
+    </div>
+   </div>
+
+   <div class="field is-grouped">
+    <div class="control">
+     <button class="button is-primary" type="submit" id="submit-button">
+      Submit
+     </button>
+    </div>
+    <div class="control">
+     <button class="button is-danger">Cancel</button>
+    </div>
+   </div>
+  </form>
+  <div
+   id="message"
+   style="
+    display: none;
+    margin: 20px;
+    font-weight: bold;
+    color: rgb(34, 0, 128);
+    padding: 8px;
+    background-color: beige;
+    border-radius: 4px;
+    border-color: rgb(127, 127, 255);
+   "
+  ></div>
+
+  <script>
+   document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the default form submission
+    document.getElementById("message").textContent = "Submitting..";
+    document.getElementById("message").style.display = "block";
+    document.getElementById("submit-button").disabled = true;
+
+    // Collect the form data
+    var formData = new FormData(this);
+    var keyValuePairs = [];
+    for (var pair of formData.entries()) {
+     keyValuePairs.push(pair[0] + "=" + pair[1]);
+    }
+
+    var formDataString = keyValuePairs.join("&");
+
+    // Send a POST request to your Google Apps Script
+    fetch(
+     "https://script.google.com/macros/s/AKfycbym2jYol9HHsj7T51Eo6j1nlr1ZuEIwPpVZnDLAIxGFGRpR1lMG-qb8Eb7wEaF2RqxwZA/exec",
+     {
+      redirect: "follow",
+      method: "POST",
+      body: formDataString,
+      headers: {
+       "Content-Type": "text/plain;charset=utf-8",
+      },
+     }
+    )
+     .then(function (response) {
+      // Check if the request was successful
+      if (response) {
+       return response; // Assuming your script returns JSON response
+      } else {
+       throw new Error("Failed to submit the form.");
+      }
+     })
+     .then(function (data) {
+      // Display a success message
+      document.getElementById("message").textContent =
+       "Data submitted successfully!";
+      document.getElementById("message").style.display = "block";
+      document.getElementById("message").style.backgroundColor = "green";
+      document.getElementById("message").style.color = "beige";
+      document.getElementById("submit-button").disabled = false;
+      document.getElementById("form").reset();
+
+      setTimeout(function () {
+       document.getElementById("message").textContent = "";
+       document.getElementById("message").style.display = "none";
+      }, 2600);
+     })
+     .catch(function (error) {
+      // Handle errors, you can display an error message here
+      console.error(error);
+      document.getElementById("message").textContent =
+       "An error occurred while submitting the form.";
+      document.getElementById("message").style.display = "block";
+     });
+   });
+  </script>
+ </body>
+</html>
