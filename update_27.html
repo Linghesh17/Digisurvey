@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .field {
+            margin-bottom: 20px;
+        }
+        .label {
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .control {
+            display: flex;
+            flex-direction: column;
+        }
+        .input, .textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio {
+            margin-bottom: 10px;
+        }
+        .radio input {
+            margin-right: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button.is-primary {
+            background-color: #4a90e2;
+            color: white;
+        }
+        .button.is-danger {
+            background-color: #e94a4a;
+            color: white;
+        }
+        #message {
+            display: none;
+            margin: 20px;
+            font-weight: bold;
+            color: rgb(34, 0, 128);
+            padding: 8px;
+            background-color: beige;
+            border-radius: 4px;
+            border-color: rgb(127, 127, 255);
+        }
+    </style>
+</head>
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">YI Digital Survey</h2>
+            </div>
+        </div>
+    </section>
+    <form id="form" class="container m-4 pl-4" method="POST">
+        <div class="field">
+            <label class="label">Your Name</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Enter your name" name="Name" />
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+                <input class="input" type="email" placeholder="Enter your mail-id" name="Email" />
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Profession</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Enter your Profession" name="Profession" />
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Date of Birth</label>
+            <div class="control">
+                <input class="input" type="date" placeholder="Your Date of Birth" name="DOB" />
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Education Level</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="Education" value="10th grade" /> 10th grade
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Education" value="High school" /> High school
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Education" value="Bachelor’s degree" /> Bachelor’s degree
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Education" value="Master’s degree" /> Master’s degree
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Do you use multi-factor authentication for online banking?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="multi_factor_authentication_for_online_banking" value="Always" /> Always
+                </label>
+                <label class="radio">
+                    <input type="radio" name="multi_factor_authentication_for_online_banking" value="Sometimes" /> Sometimes
+                </label>
+                <label class="radio">
+                    <input type="radio" name="multi_factor_authentication_for_online_banking" value="Never" /> Never
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">How frequently do you change your online banking passwords?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="do_you_change_your_online_banking_passwords" value="Every 3-6 months" /> Every 3-6 months
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_change_your_online_banking_passwords" value="Annually" /> Annually
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_change_your_online_banking_passwords" value="Rarely/Never" /> Rarely/Never
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Do you use a secure payment method (e.g., PayPal, credit cards) for online shopping?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="Do_you_use_a_secure_payment_method" value="Always" /> Always
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do_you_use_a_secure_payment_method" value="Sometimes" /> Sometimes
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do_you_use_a_secure_payment_method" value="Never" /> Never
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">How often do you monitor your bank statements and credit card transactions?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="do_you_monitor_your_bank_statements_and_credit_card_transactions" value="Daily" /> Daily
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_monitor_your_bank_statements_and_credit_card_transactions" value="Weekly" /> Weekly
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_monitor_your_bank_statements_and_credit_card_transactions" value="Monthly" /> Monthly
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_monitor_your_bank_statements_and_credit_card_transactions" value="Rarely/Never" /> Rarely/Never
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">How often do you make decisions influenced by online recommendations?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="do_you_make_decisions_influenced_by_online_recommendations" value="Very frequently" /> Very frequently
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_make_decisions_influenced_by_online_recommendations" value="Always" /> Always
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_make_decisions_influenced_by_online_recommendations" value="Occasionally" /> Occasionally
+                </label>
+                <label class="radio">
+                    <input type="radio" name="do_you_make_decisions_influenced_by_online_recommendations" value="Never" /> Never
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">If an unexpected financial issue arises, are you aware of the steps to take to address it?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="If_an_unexpected_financial_issue_arises_are_you_aware_of_the_steps" value="Very aware" /> Very aware
+                </label>
+                <label class="radio">
+                    <input type="radio" name="If_an_unexpected_financial_issue_arises_are_you_aware_of_the_steps" value="Moderately aware" /> Moderately aware
+                </label>
+                <label class="radio">
+                    <input type="radio" name="If_an_unexpected_financial_issue_arises_are_you_aware_of_the_steps" value="Slightly aware" /> Slightly aware
+                </label>
+                <label class="radio">
+                    <input type="radio" name="If_an_unexpected_financial_issue_arises_are_you_aware_of_the_steps" value="Not aware" /> Not aware
+                </label>
+            </div>
+        </div>
+
+
+        <div class="field">
+          <label class="label">How frequently do you disclose personal information on digital platforms, such as social media or websites?</label>
+          <div class="control">
+              <label class="radio">
+                  <input type="radio" name="How frequently do you disclose personal information on digital platforms, such as social media or websites?" value="Never" /> Never
+              </label>
+              <label class="radio">
+                  <input type="radio" name="How frequently do you disclose personal information on digital platforms, such as social media or websites?" value="Occasionally" /> occasionally
+              </label>
+              <label class="radio">
+                  <input type="radio" name="How frequently do you disclose personal information on digital platforms, such as social media or websites?" value="Frequently" /> Frequently
+              </label>
+          </div>
+      </div>
+
+        <div class="field">
+            <label class="label">Do you employ pseudonyms or anonymized details for online accounts?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="Do_you_employ_pseudonyms_or_anonymized_details" value="Always" /> Always
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do_you_employ_pseudonyms_or_anonymized_details" value="Occasionally" /> Occasionally
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do_you_employ_pseudonyms_or_anonymized_details" value="Never" /> Never
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Do you utilize cloud services for storing sensitive personal data?</label>
+          <div class="control">
+              <label class="radio">
+                  <input type="radio" name="Do you utilize cloud services for storing sensitive personal data?" value="yes" /> yes
+              </label>
+              <label class="radio">
+                  <input type="radio" name="Do you utilize cloud services for storing sensitive personal data?" value="No" /> no
+              </label>
+              <label class="radio">
+                  <input type="radio" name="Do you utilize cloud services for storing sensitive personal data?" value="unsure" /> unsure
+              </label>
+          </div>
+      </div>
+
+        <div class="field">
+            <label class="label">Do you consistently perform backups of your personal data?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="Do you consistently perform backups of your personal data?" value="yes" /> yes
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do you consistently perform backups of your personal data?" value="No" /> No
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do you consistently perform backups of your personal data?" value="unsure" /> unsure
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Do you review your social media privacy settings regularly?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="Do you review your social media privacy settings regularly?" value="Yes" /> Yes
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do you review your social media privacy settings regularly?" value="No" /> No
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do you review your social media privacy settings regularly?" value="unsure" /> unsure
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Do you accept friend/follower requests from unknown people?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="Do you accept friend/follower requests from unknown people?" value="Never" /> Never
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do you accept friend/follower requests from unknown people?" value="Sometimes" />Sometimes
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Do you accept friend/follower requests from unknown people?" value="Often" /> Often
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">How strong are your passwords?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="How strong are your passwords?
+                    " value="Strong" /> Strong
+                </label>
+                <label class="radio">
+                    <input type="radio" name="How strong are your passwords?
+                    " value="Moderate" /> Moderate
+                </label>
+                <label class="radio">
+                    <input type="radio" name="How strong are your passwords?
+                    " value="Weak" /> Weak
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Do you use unique passwords for each account?</label>
+          <div class="control">
+              <label class="radio">
+                  <input type="radio" name="Do you use unique passwords for each account?
+                  " value="Yes" /> Yes
+              </label>
+              <label class="radio">
+                  <input type="radio" name="Do you use unique passwords for each account?
+                  " value="Mostly" /> Mostly
+              </label>
+              <label class="radio">
+                  <input type="radio" name="Do you use unique passwords for each account?
+                  " value="No" /> No
+              </label>
+          </div>
+      </div>
+
+        <div class="field">
+            <label class="label">How often do you receive phishing emails or spam?</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="How often do you receive phishing emails or spam?" value="Never" /> Never
+                </label>
+                <label class="radio">
+                    <input type="radio" name="How often do you receive phishing emails or spam?" value="Sometimes" /> Sometimes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="How often do you receive phishing emails or spam?" value="Often" /> Often
+              </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Have you installed any Antivirus Softwares on your devices?
+            </label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="Have you installed any Antivirus Softwares on your devices?
+                    " value="Yes" /> Yes
+                </label>
+                <label class="radio">
+                    <input type="radio" name="Have you installed any Antivirus Softwares on your devices?
+                    " value="no" /> no
+                </label>
+                
+        </div>
+
+        <div class="field">
+          <label class="label">How frequently do you utilize public devices to log into your digital accounts?
+          </label>
+          <div class="control">
+              <label class="radio">
+                  <input type="radio" name="How frequently do you utilize public devices to log into your digital accounts?
+                  " value="Never" /> Never
+              </label>
+              <label class="radio">
+                  <input type="radio" name="How frequently do you utilize public devices to log into your digital accounts?
+                  " value="Rarely" /> Rarely
+              </label>
+              <label class="radio">
+                <input type="radio" name="How frequently do you utilize public devices to log into your digital accounts?
+                " value=" Occasionally" />  Occasionally
+            </label>
+            <label class="radio">
+              <input type="radio" name="How frequently do you utilize public devices to log into your digital accounts?
+              " value="Always" /> Always
+          </label>
+      </div>
+
+      <div class="field">
+        <label class="label">Do you have the practice of reading the privacy policies before accepting them?
+        </label>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="Do you have the practice of reading the privacy policies before accepting them?
+                " value="Never" /> Never
+            </label>
+            <label class="radio">
+                <input type="radio" name="Do you have the practice of reading the privacy policies before accepting them?
+                " value="Rarely" /> Rarely
+            </label>
+          <label class="radio">
+            <input type="radio" name="Do you have the practice of reading the privacy policies before accepting them?
+            " value="Always" /> Always
+        </label>
+    </div>
+
+    <div class="field">
+      <label class="label">Have you ever downloaded modified APK files?
+      </label>
+      <div class="control">
+          <label class="radio">
+              <input type="radio" name="Have you ever downloaded modified APK files?
+              " value="Frequently" /> Frequently
+          </label>
+          <label class="radio">
+              <input type="radio" name="Have you ever downloaded modified APK files?
+              " value="Occasionally" /> Occasionally
+          </label>
+        <label class="radio">
+          <input type="radio" name="Have you ever downloaded modified APK files?
+          " value="Never" /> Never
+      </label>
+  </div>
+
+  <div class="field">
+    <label class="label">How frequently do you use a VPN when accessing the internet on public Wi-Fi to secure your transactions and data?
+    </label>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="How frequently do you use a VPN when accessing the internet on public Wi-Fi to secure your transactions and data?
+            " value=" Always" />  Always
+        </label>
+        <label class="radio">
+            <input type="radio" name="How frequently do you use a VPN when accessing the internet on public Wi-Fi to secure your transactions and data?
+            " value="Often" /> Often
+        </label>
+      <label class="radio">
+        <input type="radio" name="How frequently do you use a VPN when accessing the internet on public Wi-Fi to secure your transactions and data?
+        " value="Rarely" /> Rarely
+    </label>
+    <label class="radio">
+      <input type="radio" name="How frequently do you use a VPN when accessing the internet on public Wi-Fi to secure your transactions and data?
+      " value="Never" /> Never
+  </label>
+</div>
+
+
+
+        <div class="field">
+            <div class="control">
+                <button type="submit" class="button is-primary">Submit</button>
+            </div>
+
+            
+        </div>
+    </form>
+</body>
+</html>
