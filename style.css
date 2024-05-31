@@ -1,149 +1,129 @@
-/* General Styles */
+/* Add a gradient background to the entire page */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #f2f2f2, #e8e8e8);
-  }
-  
-  h1,
-  h2,
-  h3 {
-    margin: 1rem 0;
-    font-weight: bold;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: linear-gradient(to right, #2980b9, #1abc9c);
-    padding: 2rem 0;
-    text-align: center;
-    position: relative;
-  }
-  
-  .hero-body {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: -1;
-  }
-  
-  /* Top Text */
-  .top-text {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 2rem;
-    opacity: 0.8;
-  }
-  
-  /* Form Section */
+  background: linear-gradient(to right, #00bbff, #5fc4ef);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Style for the hero section */
+.hero.is-primary {
+  background: linear-gradient(135deg, #002fff 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(180, 215, 241, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form field styling */
+.field {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  color: #000000;
+}
+
+.input, .textarea, .radio {
+  font-size: 1em;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.input:focus, .textarea:focus, .radio:focus {
+  border-color: #764ba2;
+  outline: none;
+}
+
+/* Radio button styling */
+.radio {
+  margin-right: 15px;
+}
+
+/* Button styling */
+.button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button.is-primary {
+  background-color: #667eea;
+  color: #fff;
+}
+
+.button.is-primary:hover {
+  background-color: #555ed8;
+}
+
+.button.is-danger {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.button.is-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Message box styling */
+#message {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  background-color: #34495e;
+  border-radius: 4px;
+  display: none;
+  text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
   .container {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
+      padding: 10px;
   }
-  
-  .field {
-    margin-bottom: 1rem;
+
+  .title {
+      font-size: 2em;
   }
-  
-  .label {
-    display: inline-block;
-    width: 150px;
-    margin-bottom: 5px;
+
+  .input, .textarea, .radio {
+      font-size: 0.9em;
+      padding: 8px;
   }
-  
-  .control {
-    margin-left: 160px;
-  }
-  
-  /* Radio Buttons */
-  .radio {
-    display: inline-block;
-    margin-right: 15px;
-  }
-  
-  /* Comments */
-  .textarea {
-    width: 100%;
-    height: 100px;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Buttons */
+
   .button {
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+      font-size: 0.9em;
+      padding: 8px 16px;
   }
-  
-  .button.is-primary {
-    background-color: #2087dc;
-    color: #fff;
-  }
-  
-  .button.is-danger {
-    background-color: #dc3545;
-    color: #fff;
-  }
-  
-  /* Message Box */
+
   #message {
-    padding: 1rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+      font-size: 1em;
+      padding: 8px;
   }
-  
-  .success {
-    background-color: green;
-    color: #fff;
-  }
-  
-  .error {
-    background-color: red;
-    color: #fff;
-  }
-  
-  /* Abstract Elements */
-  .abstract-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(50%);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: linear-gradient(to right, #ff0000, #fff);
-    opacity: 0.2;
-    animation: rotate 5s linear infinite;
-  }
-  
-  .abstract-2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(to right, #e8e8e8, #f2f2f2);
-    opacity: 0.1;
-    animation: rotate 7
-  
+}
