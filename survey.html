@@ -1,0 +1,3309 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="max-w-sm mx-auto bg-card rounded-lg shadow-lg overflow-hidden">
+    <div class="bg-purple-600 p-4">
+        <img src="https://openui.fly.dev/openui/24x24.svg?text=🏢" alt="Organization Logo" class="h-10 w-auto mx-auto" />
+        <h2 class="text-white text-center text-2xl font-bold mt-2">Harnessing India's Youth Power</h2>
+    </div>
+    <div class="p-4">
+        <h3 class="text-lg font-semibold">Key Focus Areas</h3>
+        <ul class="list-disc list-inside text-muted-foreground">
+            <li>Empowering Youth Leadership</li>
+            <li>Promoting Responsible Youth</li>
+            <li>Skill and Self Development</li>
+        </ul>
+    </div>
+    <div class="p-4 border-t border-border">
+        <p class="text-muted-foreground">
+            Young Indians (YI) is a movement for Indian youth to converge, lead, co-create and
+            influence India’s future. As an integral part of the Confederation of Indian Industry (CII),
+            YI's mission to empower the youth gives a voice to the country’s young generation and
+            enables them to instill passion and drive in their entrepreneurial endeavors to create
+            positive change to lead the nation.
+        </p>
+    </div>
+</div>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center p-4 bg-background text-foreground">
+  <h1 class="text-2xl font-bold mb-4">Introduction to Digital Safety</h1>
+  <div class="bg-card p-4 rounded-lg shadow-md mb-4">
+    <p class="text-muted-foreground">
+      In today's interconnected world, digital safety is more crucial than ever. With the increasing reliance on online platforms for communication, work, and personal activities, individuals are constantly at risk of cyber threats. Digital safety refers to the practices and measures that protect your personal information, privacy, and online activities from malicious actors and cybercriminals. This page aims to provide a comprehensive guide to digital safety, covering essential areas that everyone should be aware of. By understanding and implementing these practices, you can significantly reduce your vulnerability to cyber threats and protect your digital presence.
+    </p>
+  </div>
+  <div class="bg-card p-4 rounded-lg shadow-md">
+    <p class="text-muted-foreground">
+      This page aims to provide a comprehensive guide to digital safety, covering essential areas that everyone should be aware of. By understanding and implementing these practices, you can significantly reduce your vulnerability to cyber threats and protect your digital presence.
+    </p>
+  </div>
+  <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+</div>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-background text-foreground p-4 md:p-8">
+  <div class="mb-4">
+    <h1 class="text-2xl font-bold">Harnessing India's Massive Youth Power</h1>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="bg-primary text-primary-foreground p-4 rounded-lg shadow-md">
+      <h2 class="font-semibold">Enabling Youth Leadership</h2>
+    </div>
+    <div class="bg-primary text-primary-foreground p-4 rounded-lg shadow-md">
+      <h2 class="font-semibold">Shaping Responsible Youth</h2>
+    </div>
+    <div class="bg-primary text-primary-foreground p-4 rounded-lg shadow-md">
+      <h2 class="font-semibold">Youth Skill Development & Training</h2>
+    </div>
+    <div class="bg-primary text-primary-foreground p-4 rounded-lg shadow-md">
+      <h2 class="font-semibold">Giving Voice To Young India</h2>
+    </div>
+  </div>
+  <p class="mt-6 text-muted-foreground">
+    Young Indians (Yi) is a movement for Indian youth to Converge, Lead, Co-Create and influence India’s Future. As an integral part of the Confederation of Indian Industry (CII), Yi’s mission to strengthen the future of India gives a stage and voice to the country’s next generation of changemakers. It aims to instill in young minds the power of leadership, enhance the youth entrepreneurial ecosystem and create youth-led changes to build the nation.
+  </p>
+</div>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center p-4 bg-background text-foreground">
+  <img aria-hidden="true" alt="logo" src="https://openui.fly.dev/openui/24x24.svg?text=Logo" class="mb-4" />
+  <h1 class="text-2xl font-bold mb-2">DIGITAL SAFETY AUDIT</h1>
+  <p class="text-center mb-4">
+    Welcome to the Digital Safety Audit<br />
+    The Digital Safety Audit is designed to assess your digital presence and help you safeguard your online identity. It will evaluate your current digital habits and provide recommendations based on best practices. This audit is a vital step in ensuring your online activities are secure for years to come.
+  </p>
+  <h2 class="text-xl font-semibold mb-2">Massoom Digital Safety Audit</h2>
+  <p class="text-center mb-4">by Young Indians, Chennai</p>
+  <div class="w-full h-32 bg-zinc-200 mb-4"></div>
+  <p class="text-center mb-4">
+    Think of this as your personal online security quiz, helping you spot any weak spots in your digital habits and giving you tips on how to improve.
+  </p>
+  <button class="bg-primary text-primary-foreground hover:bg-primary/80 p-2 rounded-lg">
+    START
+  </button>
+  <span class="text-muted-foreground mt-2">An initiative of Massoom by Young Indians</span>
+</div>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center p-4 bg-background rounded-lg shadow-md">
+  <h1 class="text-xl font-bold mb-4">TELL US ABOUT YOURSELF</h1>
+  <input type="text" placeholder="Enter Your Name" class="mb-4 p-2 w-full border border-border rounded-lg" />
+  <input type="email" placeholder="Mail-Id" class="mb-4 p-2 w-full border border-border rounded-lg" />
+  <div class="mb-4 w-full">
+  </div>
+  <p class="mt-4 text-center text-muted-foreground">An initiative of Masoom by Young Indians</p>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="max-w-md mx-auto p-4 bg-card border border-border rounded-lg shadow-md">
+  <h2 class="text-lg font-semibold text-foreground mb-4">How do you secure your phone that you use?</h2>
+  <button class="w-full bg-secondary text-secondary-foreground p-2 rounded-lg mb-2 hover:bg-secondary/80">
+    I don't use any special security
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use a simple screen lock (like pattern or simple PIN).
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use a strong password or PIN.
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use biometric lock (fingerprint/face recognition).
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-4 hover:bg-muted/80">
+    I use biometric lock plus regular security updates.
+  </button>
+  <button class="w-full bg-primary text-primary-foreground p-2 rounded-lg mb-2 hover:bg-primary/80">
+    SUBMIT
+  </button>
+  <p class="text-center text-muted-foreground">Read more</p>
+</div>
+  </body>
+
+  <body>
+    <div class="max-w-md mx-auto p-4 bg-card border border-border rounded-lg shadow-md">
+  <h2 class="text-lg font-semibold text-foreground mb-4">How do you secure your phone that you use?</h2>
+  <button class="w-full bg-secondary text-secondary-foreground p-2 rounded-lg mb-2 hover:bg-secondary/80">
+    I don't use any special security
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use a simple screen lock (like pattern or simple PIN).
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use a strong password or PIN.
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use biometric lock (fingerprint/face recognition).
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-4 hover:bg-muted/80">
+    I use biometric lock plus regular security updates.
+  </button>
+  <button class="w-full bg-primary text-primary-foreground p-2 rounded-lg mb-2 hover:bg-primary/80">
+    SUBMIT
+  </button>
+  <p class="text-center text-muted-foreground">Read more</p>
+</div>
+  </body>
+  <body>
+    <div class="max-w-md mx-auto p-4 bg-card border border-border rounded-lg shadow-md">
+  <h2 class="text-lg font-semibold text-foreground mb-4">How do you secure your phone that you use?</h2>
+  <button class="w-full bg-secondary text-secondary-foreground p-2 rounded-lg mb-2 hover:bg-secondary/80">
+    I don't use any special security
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use a simple screen lock (like pattern or simple PIN).
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use a strong password or PIN.
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-2 hover:bg-muted/80">
+    I use biometric lock (fingerprint/face recognition).
+  </button>
+  <button class="w-full bg-muted text-muted-foreground p-2 rounded-lg mb-4 hover:bg-muted/80">
+    I use biometric lock plus regular security updates.
+  </button>
+  <button class="w-full bg-primary text-primary-foreground p-2 rounded-lg mb-2 hover:bg-primary/80">
+    SUBMIT
+  </button>
+  <p class="text-center text-muted-foreground">Read more</p>
+</div>
+  </body>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center min-h-screen p-4 bg-background">
+  <h1 class="text-2xl font-bold text-center text-primary">Thank You for Your Participation!</h1>
+  
+  <div class="mt-4 mb-6">
+    <img aria-hidden="true" alt="check-mark" src="https://openui.fly.dev/openui/100x100.svg?text=✔️" class="w-24 h-24 rounded-full bg-secondary" />
+  </div>
+
+  <p class="text-center text-muted-foreground">
+    We greatly appreciate you taking the time to complete our survey. Your feedback is incredibly valuable and will help us improve and make a meaningful impact. If you have any further thoughts or suggestions, feel free to reach out to us. Stay connected and thank you for contributing!
+  </p>
+
+  <div class="mt-6 space-y-2">
+    <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg">Access Resources</button>
+    <button class="bg-muted text-muted-foreground hover:bg-muted/80 px-4 py-2 rounded-lg">More about YUVA</button>
+    <button class="bg-accent text-accent-foreground hover:bg-accent/80 px-4 py-2 rounded-lg">View Score</button>
+  </div>
+
+  <p class="mt-4 text-sm text-muted-foreground">An initiative of Masoom by Young Indians</p>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center p-4 bg-background rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-6">SCORE BOARD</h1>
+    <div class="w-full space-y-4">
+        <div>
+            <span class="text-sm">CATEGORY 1</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 60%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 2</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 40%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 3</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 4</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 20%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 5</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 50%;"></div>
+            </div>
+        </div>
+    </div>
+    <p class="mt-4 text-sm text-muted-foreground">An initiative of Masoom by Young Indians</p>
+    <div class="flex justify-between w-full mt-6">
+        <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Back</button>
+        <button class="bg-accent text-accent-foreground hover:bg-accent/80 px-4 py-2 rounded">More about YUVA</button>
+    </div>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center p-4 bg-background rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-6">SCORE BOARD</h1>
+    <div class="w-full space-y-4">
+        <div>
+            <span class="text-sm">CATEGORY 1</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 60%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 2</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 40%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 3</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 4</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 20%;"></div>
+            </div>
+        </div>
+        <div>
+            <span class="text-sm">CATEGORY 5</span>
+            <div class="relative w-full h-2 bg-zinc-200 rounded">
+                <div class="absolute h-2 bg-gradient-to-r from-red-500 to-green-500" style="width: 50%;"></div>
+            </div>
+        </div>
+    </div>
+    <p class="mt-4 text-sm text-muted-foreground">An initiative of Masoom by Young Indians</p>
+    <div class="flex justify-between w-full mt-6">
+        <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Back</button>
+        <button class="bg-accent text-accent-foreground hover:bg-accent/80 px-4 py-2 rounded">More about YUVA</button>
+    </div>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center p-4 bg-background text-foreground">
+  <h1 class="text-2xl font-bold mb-4">Introduction to Digital Safety</h1>
+  <div class="bg-card p-4 rounded-lg shadow-md mb-4">
+    <p>
+      In today's interconnected world, digital safety is more crucial than ever. With the increasing reliance on online platforms for communication, work, and personal activities, individuals are constantly at risk of cyber threats. Digital safety refers to the practices and measures that protect your personal information, privacy, and online activities from malicious actors and cybercriminals.
+    </p>
+    <p class="mt-2">
+      This page aims to provide a comprehensive guide to digital safety, covering essential areas that everyone should be aware of. By understanding and implementing these practices, you can significantly reduce your vulnerability to cyber threats and protect your digital presence.
+    </p>
+  </div>
+  <div class="bg-card p-4 rounded-lg shadow-md">
+    <p>
+      This page aims to provide a comprehensive guide to digital safety, covering essential areas that everyone should be aware of. By understanding and implementing these practices, you can significantly reduce your vulnerability to cyber threats and protect your digital presence.
+    </p>
+  </div>
+  <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="max-w-md mx-auto bg-card p-6 rounded-lg shadow-lg">
+  <h2 class="text-xl font-bold text-primary mb-4">KEY AREAS COVERED</h2>
+  <ol class="list-decimal list-inside text-muted-foreground">
+    <li class="mb-2">
+      <strong>Password Security:</strong>
+      <p>Learn to create strong, unique passwords and use multi-factor authentication (MFA) to prevent unauthorized access.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Phishing Awareness:</strong>
+      <p>Recognize phishing scams and understand best practices to protect your personal information from these common cyber threats.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Social Media Privacy:</strong>
+      <p>Safeguard your social media accounts by adjusting privacy settings and being cautious about the information you share publicly.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Safe Browsing Practices:</strong>
+      <p>Identify secure websites, use antivirus software, and practice safe browsing to avoid malicious sites and downloads.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Data Backup Strategies:</strong>
+      <p>Regularly back up your data to ensure recovery in case of a cyber attack or hardware failure.</p>
+    </li>
+  </ol>
+  <p class="mt-4 text-muted-foreground">By understanding these areas, you can navigate the digital world more securely and protect your personal information from online threats.</p>
+  <button class="mt-6 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    
+
+<div class="max-w-md mx-auto bg-card p-6 rounded-lg shadow-lg">
+  <h2 class="text-xl font-bold text-primary mb-4">KEY AREAS COVERED</h2>
+  <ol class="list-decimal list-inside text-muted-foreground">
+    <li class="mb-2">
+      <strong>Password Security:</strong>
+      <p>Learn to create strong, unique passwords and use multi-factor authentication (MFA) to prevent unauthorized access.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Phishing Awareness:</strong>
+      <p>Recognize phishing scams and understand best practices to protect your personal information from these common cyber threats.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Social Media Privacy:</strong>
+      <p>Safeguard your social media accounts by adjusting privacy settings and being cautious about the information you share publicly.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Safe Browsing Practices:</strong>
+      <p>Identify secure websites, use antivirus software, and practice safe browsing to avoid malicious sites and downloads.</p>
+    </li>
+    <li class="mb-2">
+      <strong>Data Backup Strategies:</strong>
+      <p>Regularly back up your data to ensure recovery in case of a cyber attack or hardware failure.</p>
+    </li>
+  </ol>
+  <p class="mt-4 text-muted-foreground">By understanding these areas, you can navigate the digital world more securely and protect your personal information from online threats.</p>
+  <button class="mt-6 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Next</button>
+</div>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="flex flex-col items-center p-4 bg-card text-card-foreground rounded-lg shadow-lg">
+  <h2 class="text-2xl font-bold mb-4">KEY AREAS COVERED</h2>
+  <ol class="list-decimal list-inside space-y-2">
+    <li>
+      <strong>Password Security:</strong> Learn to create strong, unique passwords and use multi-factor authentication (MFA) to prevent unauthorized access.
+    </li>
+    <li>
+      <strong>Phishing Awareness:</strong> Recognize phishing scams and understand best practices to protect your personal information from these common cyber threats.
+    </li>
+    <li>
+      <strong>Social Media Privacy:</strong> Safeguard your social media accounts by adjusting privacy settings and being cautious about the information you share publicly.
+    </li>
+    <li>
+      <strong>Safe Browsing Practices:</strong> Identify secure websites, use antivirus software, and practice safe browsing to avoid malicious sites and downloads.
+    </li>
+    <li>
+      <strong>Data Backup Strategies:</strong> Regularly back up your data to ensure recovery in case of a cyber attack or hardware failure.
+    </li>
+  </ol>
+  <p class="mt-4 text-muted-foreground">By understanding these areas, you can navigate the digital world more securely and protect your personal information from online threats.</p>
+  <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-background p-4 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-4">Password Security</h2>
+    <ul class="list-disc list-inside space-y-2">
+        <li>
+            <strong>Creating Strong Passwords:</strong> Use a combination of upper and lowercase letters, numbers, and special characters to create complex passwords. Avoid using easily guessable information like your name, birthdate, or common words. For instance, a strong password could look like G7@f9$!Hk2.
+        </li>
+        <li>
+            <strong>Using Unique Passwords:</strong> Do not reuse passwords across different accounts. If one password is compromised, using it for multiple accounts increases the risk of all those accounts being accessed. Tools like password managers (e.g., LastPass, 1Password) can help generate strong unique passwords securely.
+        </li>
+        <li>
+            <strong>Multi-Factor Authentication (MFA):</strong> Implement MFA to add an extra layer of security. This can involve receiving a code on your phone, using biometric verification, or something similar. Even if someone gains access to your password, MFA will prevent them from accessing your account without this additional step.
+        </li>
+    </ul>
+    <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="max-w-md mx-auto bg-card text-card-foreground p-6 rounded-lg shadow-lg">
+  <h2 class="text-xl font-bold mb-4">Phishing Awareness</h2>
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>Recognizing Phishing Emails:</strong> Phishing emails often create a sense of urgency or appear to be from legitimate sources like banks or government agencies. They may contain misspellings, strange grammar, or logos that look slightly off. Always double-check the sender's email address and avoid clicking on suspicious links.
+    </li>
+    <li>
+      <strong>Malicious Links and Attachments:</strong> Phishing emails can contain links that lead to fake websites designed to steal your information or attachments that install malware on your device. Hover over links to see where they lead before clicking, and avoid downloading attachments from unknown senders.
+    </li>
+    <li>
+      <strong>Spotting Fraudulent Data Entry Forms:</strong> Phishing often involves directly users to forms that mimic legitimate websites, prompting them to enter sensitive information. Verify URLs and avoid submitting personal information to sites that seem suspicious.
+    </li>
+    <li>
+      <strong>Employee Training:</strong> In a corporate setting, regular training can help employees recognize and avoid phishing attempts. This can include simulated phishing exercises to reinforce the importance of vigilance against suspicious email.
+    </li>
+  </ul>
+  <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    
+
+<div class="bg-background p-4 rounded-lg shadow-md">
+  <h2 class="text-xl font-semibold mb-4">Social Media Privacy</h2>
+  <ul class="list-disc list-inside space-y-2">
+    <li>Unique and Secure Passwords: Ensure your social media accounts use unique, strong passwords. Avoid using the same password for multiple platforms to prevent cross-platform breaches.</li>
+    <li>
+      Multi-Factor Authentication: Enable two-factor authentication (2FA) on social media accounts like Facebook and Twitter. This extra step requires you to verify your identity with a code sent to
+      your phone or email, making it harder for unauthorized users to access your account.
+    </li>
+    <li>
+      Review Security Settings: Social media platforms regularly update their privacy and security settings. Periodically review these settings to ensure your account is configured for maximum
+      privacy. Limit the visibility of personal information and posts to trusted contacts only.
+    </li>
+    <li>
+      Be Cautious of Friends Only: Only accept friend requests from people you know. Criminals often create fake profiles to execute targeted scams. Regularly audit your friends list and remove any
+      suspicious profiles.
+    </li>
+    <li>
+      Think Before You Post: Consider the information you share on social media. Avoid posting sensitive details like your home address, phone number, or personal plans, as this information can be
+      exploited by malicious actors.
+    </li>
+  </ul>
+  <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+</div>
+
+
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-card p-4 rounded-lg shadow-md max-w-md mx-auto mt-10">
+  <h2 class="text-lg font-bold text-primary mb-4">Safe Browsing Practices</h2>
+  <ul class="list-disc list-inside text-muted-foreground">
+    <li>Use Secure Connections: Always ensure that websites use HTTPS, especially when entering personal information. HTTPS provides a secure connection, reducing the risk of data interception.</li>
+    <li>Install Security Tools: Use reputable antivirus software and browser extensions that block malicious websites and phishing attempts. This adds an extra layer of protection when browsing the web.</li>
+    <li>Avoid Suspicious Links: Be wary of links in emails, especially if they seem unexpected. Cybercriminals often disguise malicious links to look legitimate, so always verify the source before clicking.</li>
+    <li>Regularly Clear Cache and Cookies: Clearing your browser’s cache and cookies helps prevent unauthorized access to your saved login sessions and personal data.</li>
+  </ul>
+  <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-4 p-2 rounded">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="max-w-md mx-auto p-4 bg-card rounded-lg shadow-lg">
+  <h2 class="text-lg font-semibold text-foreground">Data Backup Strategies</h2>
+  <ul class="list-disc list-inside mt-2 text-muted-foreground">
+    <li><strong>Regular Backups:</strong> Regularly back up important data to secure locations such as an external hard drive or cloud storage. This ensures that you have a copy of your data in case of hardware failure, ransomware attacks, or accidental deletion.</li>
+    <li><strong>Use Encrypted Storage:</strong> When storing backups, use encrypted drives or secure cloud services that provide end-to-end encryption to protect your data from unauthorized access.</li>
+    <li><strong>Automate Backups:</strong> Set up automated backups to ensure your data is regularly copied without requiring manual intervention. This reduces the risk of forgetting to back up important files.</li>
+  </ul>
+  <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg w-full">BACK TO HOME</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="max-w-md mx-auto p-4 bg-card text-card-foreground rounded-lg shadow-lg">
+  <h1 class="text-2xl font-bold text-primary mb-2">ACCESS EXTERNAL RESOURCES</h1>
+  <p class="text-muted-foreground mb-4">"Explore a curated list of trusted resources to enhance your digital safety."</p>
+  
+  <h2 class="text-xl font-semibold text-primary mb-2">ABOUT</h2>
+  <p class="text-muted-foreground mb-4">
+    In this section, you'll find a curated list of trustworthy external resources to enhance your digital safety knowledge. 
+    We've included information from top government cybersecurity agencies, reputable cybersecurity blogs, news sites, and 
+    recommended tools and software to strengthen your digital security. Whether you're looking to stay updated on the 
+    latest cyber threats or find tools to protect your personal data, this resource hub provides everything you need 
+    to navigate the digital world safely.
+  </p>
+  
+  <h2 class="text-xl font-semibold text-primary mb-2">CHECK</h2>
+  <ul class="list-disc list-inside text-muted-foreground mb-4">
+    <li>Government Cybersecurity Agencies</li>
+    <li>Reputable Cybersecurity Blogs and News Sites</li>
+    <li>Tools and Software for Enhancing Digital Security</li>
+  </ul>
+  
+  <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">
+    Next
+  </button>
+  
+  <footer class="mt-4 text-sm text-muted-foreground">
+    An initiative of Masoom by Young Indians
+  </footer>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-card p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold text-foreground mb-4">Government Cybersecurity Agencies</h1>
+<div class="mb-6">
+    <h2 class="text-xl font-semibold text-primary">1. Indian Computer Emergency Response Team (CERT-In)</h2>
+    <p class="text-muted-foreground mb-2">
+        CERT-In is the national agency responsible for dealing with cybersecurity threats in India. It monitors and responds to cybersecurity incidents, provides alerts, and issues guidelines to enhance cybersecurity measures across various sectors.
+    </p>
+    <div class="flex items-center">
+        <img aria-hidden="true" alt="CERT-In Icon" src="https://openui.fly.dev/openui/24x24.svg?text=🔍" class="mr-2" />
+        <a href="#" class="text-primary underline">CERT-In Alerts</a>
+    </div>
+</div>
+
+<div class="mb-6">
+    <h2 class="text-xl font-semibold text-primary">2. National Critical Information Infrastructure Protection Centre (NCIIPC)</h2>
+    <p class="text-muted-foreground mb-2">
+        NCIIPC focuses on safeguarding India's critical information infrastructure, particularly in key sectors like energy, banking, telecom, and defense. It works on preventing disruptions to essential services that rely on this infrastructure.
+    </p>
+    <div class="flex items-center">
+        <img aria-hidden="true" alt="NCIIPC Icon" src="https://openui.fly.dev/openui/24x24.svg?text=🔍" class="mr-2" />
+        <a href="#" class="text-primary underline">NCIIPC Resources</a>
+    </div>
+</div>
+
+<div class="mb-6">
+    <h2 class="text-xl font-semibold text-primary">3. Cyber and Information Security Division (C&IS)</h2>
+    <p class="text-muted-foreground mb-2">
+        Part of the Ministry of Home Affairs, C&IS is responsible for implementing cybersecurity policies, including the formulation of cybersecurity strategies and coordinating responses to cyber threats at a national level.
+    </p>
+    <div class="flex items-center">
+        <img aria-hidden="true" alt="C&IS Icon" src="https://openui.fly.dev/openui/24x24.svg?text=🔍" class="mr-2" />
+        <a href="#" class="text-primary underline">Ministry of Home Affairs - Cyber and Information Security</a>
+    </div>
+    <div class="flex items-center">
+        <a href="#" class="text-primary underline">Cybercrime Resources</a>
+    </div>
+</div>
+
+<button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+
+<footer class="mt-4 text-sm text-muted-foreground">
+    An Initiative of Masoom by Young Indians
+</footer>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-card p-6 rounded-lg shadow-lg">
+  <h1 class="text-2xl font-bold text-primary mb-4">Government Cybersecurity Agencies</h1>
+  <ol class="list-decimal list-inside space-y-4">
+    <li>
+      <h2 class="text-xl font-semibold">1. Indian Computer Emergency Response Team (CERT-In)</h2>
+      <p class="text-muted-foreground">
+        CERT-In is the national agency responsible for dealing with cybersecurity threats in India. It monitors and responds to cybersecurity incidents, provides alerts, and issues guidelines to enhance cybersecurity measures across various sectors.
+      </p>
+      <a href="#" class="text-accent underline">CERT-In Alerts</a>
+    </li>
+<li>
+  <h2 class="text-xl font-semibold">2. National Critical Information Infrastructure Protection Centre (NCIIPC)</h2>
+  <p class="text-muted-foreground">
+    NCIIPC focuses on safeguarding India's critical information infrastructure, particularly in key sectors like energy, banking, telecom, and defense. It works on preventing disruptions to essential services that rely on this infrastructure.
+  </p>
+  <a href="#" class="text-accent underline">NCIIPC Resources</a>
+</li>
+
+<li>
+  <h2 class="text-xl font-semibold">3. Cyber and Information Security Division (C&IS)</h2>
+  <p class="text-muted-foreground">
+    Part of the Ministry of Home Affairs, C&IS is responsible for implementing cybersecurity policies, including the formulation of cybersecurity strategies and coordinating responses to cyber threats at a national level.
+  </p>
+  <a href="#" class="text-accent underline">Ministry of Home Affairs - Cyber and Information Security</a>
+  <ul class="list-disc list-inside mt-2">
+    <li><a href="#" class="text-accent underline">Cybercrime Resources</a></li>
+  </ul>
+</li>
+  </ol>
+</div>
+<button class="mt-6 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-card text-card-foreground p-4 rounded-lg shadow-md">
+  <h1 class="text-2xl font-bold mb-4">Government Cybersecurity Agencies</h1>
+  <div class="mb-6">
+    <h2 class="text-xl font-semibold">4. Defence Cyber Agency (DCA)</h2>
+    <p class="text-muted-foreground">• The Defence Cyber Agency is under the Ministry of Defence and focuses on protecting the Indian Armed Forces' cyber infrastructure. It also ensures a secure digital environment for military operations.</p>
+    <a href="#" class="text-primary hover:underline">Ministry of Defence</a>
+  </div>
+  <div class="mb-6">
+    <h2 class="text-xl font-semibold">5. National Cyber Coordination Centre (NCCC)</h2>
+    <p class="text-muted-foreground">• NCCC operates under the Ministry of Electronics and Information Technology (MeitY) and is tasked with real-time threat assessment. It coordinates between various agencies to monitor and counteract cyber threats.</p>
+    <a href="#" class="text-primary hover:underline">Ministry of Electronics and IT - NCCC</a>
+  </div>
+  <div class="mb-6">
+    <h2 class="text-xl font-semibold">6. Data Security Council of India (DSCI)</h2>
+    <p class="text-muted-foreground">• Though not strictly a government agency, DSCI, set up by NASSCOM, works in collaboration with the government to promote data protection and cybersecurity. It provides best practices, frameworks, and resources for enhancing cybersecurity.</p>
+    <a href="#" class="text-primary hover:underline">DSCI Resources</a>
+  </div>
+  <footer class="mt-4 text-sm text-muted-foreground">An initiative of Masoom by Young Indians</footer>
+</div>
+<button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-card p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold text-primary mb-4">Reputable Cybersecurity Blogs and News Sites India</h1>
+<ol class="list-decimal pl-5">
+    <li class="mb-4">
+        <h2 class="font-semibold">1. CyberSafe</h2>
+        <p class="text-muted-foreground">CyberSafe is an Indian cybersecurity blog providing regular updates on cybersecurity news, threat intelligence, data breaches, and cybersecurity best practices. It also covers various cybersecurity topics such as ethical hacking, network security, and online privacy.</p>
+        <a href="#" class="text-secondary hover:underline">CyberSafe - Main Site</a>
+    </li>
+    
+    <li class="mb-4">
+        <h2 class="font-semibold">2. SecurityXploded</h2>
+        <p class="text-muted-foreground">SecurityXploded is an Indian platform that offers a variety of cybersecurity resources, including blogs, tools, tutorials, and research papers. It is popular among security professionals and enthusiasts for its insights into malware analysis, reverse engineering, and network security.</p>
+        <a href="#" class="text-secondary hover:underline">SecurityXploded - Main Site</a>
+    </li>
+    
+    <li class="mb-4">
+        <h2 class="font-semibold">3. The Hacker News India</h2>
+        <p class="text-muted-foreground">The Hacker News India provides the latest cybersecurity news, including hacking incidents, data breaches, cyber threats, and new vulnerabilities. It also offers expert insights and analysis on cybersecurity trends and issues affecting the Indian cyber landscape.</p>
+        <a href="#" class="text-secondary hover:underline">The Hacker News - Main Site</a>
+    </li>
+</ol>
+
+<footer class="mt-6 text-center text-muted-foreground">
+    <p>An initiative of Masoom by Young Indians</p>
+</footer>
+
+<button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-card p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Reputable Cybersecurity Blogs and News Sites India</h1>
+<div class="mb-6">
+    <h2 class="text-xl font-semibold">4. InfoSec Awareness</h2>
+    <p class="text-muted-foreground mb-2">
+        InfoSec Awareness is an initiative aimed at spreading awareness about information security. The blog covers various aspects of cybersecurity, such as cyber hygiene, online privacy, and safety tips for individuals and organizations to safeguard their digital presence.
+    </p>
+    <a href="#" class="text-primary hover:underline">InfoSec Awareness - Main Site</a>
+</div>
+
+<div class="mb-6">
+    <h2 class="text-xl font-semibold">5. CISO MAG</h2>
+    <p class="text-muted-foreground mb-2">
+        CISO MAG is a leading cybersecurity magazine that covers a wide range of topics, including cyber threats, data breaches, compliance, and security strategies. It features articles, interviews, and insights from cybersecurity experts and industry leaders.
+    </p>
+    <a href="#" class="text-primary hover:underline">CISO MAG - Main Site</a>
+</div>
+
+<div class="mb-6">
+    <h2 class="text-xl font-semibold">6. ISAC (Indian School of Anti Hacking)</h2>
+    <p class="text-muted-foreground mb-2">
+        ISAC is focused on educating and spreading awareness about cybersecurity. It provides news, expert analysis, and educational content related to ethical hacking, cybercrime, and cybersecurity training.
+    </p>
+    <a href="#" class="text-primary hover:underline">ISAC - Main Site</a>
+</div>
+
+<button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-lg">Next</button>
+
+<footer class="mt-4 text-sm text-muted-foreground">
+    An initiative of Masoom by Young Indians
+</footer>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-card text-card-foreground p-6 rounded-lg shadow-lg max-w-lg mx-auto">
+    <h1 class="text-2xl font-bold mb-4 text-primary">Tools and Software for Enhancing Digital Security</h1>
+<div class="mb-6">
+    <h2 class="text-xl font-semibold">1. K7 Total Security</h2>
+    <p class="text-muted-foreground mb-2">
+        K7 Total Security is a comprehensive security solution developed by the Indian cybersecurity firm K7 Computing. It provides antivirus protection, internet security, and privacy protection features. The tool includes real-time scanning, ransomware protection, a secure firewall, and parental controls.
+    </p>
+    <a href="#" class="text-secondary hover:underline">K7 Total Security - Official Site</a>
+</div>
+
+<div class="mb-6">
+    <h2 class="text-xl font-semibold">2. Quick Heal Total Security</h2>
+    <p class="text-muted-foreground mb-2">
+        Quick Heal is a popular Indian antivirus and internet security software. It offers multiple layers of protection, including antivirus, anti-malware, anti-ransomware, and safe banking features. The software also includes a secure browser for safe online transactions and data privacy.
+    </p>
+    <a href="#" class="text-secondary hover:underline">Quick Heal Total Security - Official Site</a>
+</div>
+
+<div class="mb-6">
+    <h2 class="text-xl font-semibold">3. eScan Internet Security Suite</h2>
+    <p class="text-muted-foreground mb-2">
+        Developed by MicroWorld Technologies, an Indian company, eScan provides a complete security solution with antivirus, anti-spam, and anti-phishing features. It includes a two-way firewall, parental control, and real-time protection against threats. eScan also offers data encryption and cloud security features.
+    </p>
+    <a href="#" class="text-secondary hover:underline">eScan - Official Site</a>
+</div>
+
+<button class="bg-primary text-primary-foreground p-2 rounded-lg hover:bg-primary/80">Next</button>
+</div>
+  </body>
+</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="max-w-xl mx-auto p-4 bg-card text-card-foreground">
+  <h1 class="text-2xl font-bold mb-4">Tools and Software for Enhancing Digital Security</h1>
+  <div class="mb-6">
+    <h2 class="text-xl font-semibold">4. Segrite Endpoint Security</h2>
+    <p class="text-muted-foreground">
+      Segrite is an enterprise-level security solution by Quick Heal Technologies. It offers advanced endpoint security solutions for businesses, including antivirus, web security, device control, and ransomware protection. Segrite's centralized management console allows easy deployment and management across networks.
+    </p>
+    <a href="#" class="flex items-center text-primary hover:underline">
+      <img aria-hidden="true" alt="link" src="https://openui.fly.dev/openui/24x24.svg?text=🔗" class="mr-2" />
+      Segrite - Official Site
+    </a>
+  </div>
+  <div class="mb-6">
+    <h2 class="text-xl font-semibold">5. Indian Government’s Cyber Swachhta Kendra (Botnet Cleaning and Malware Analysis Centre)</h2>
+    <p class="text-muted-foreground">
+      An initiative by the Indian government, Cyber Swachhta Kendra provides free tools and software for detecting and removing bots and malware. It includes solutions like AppSamvid (application whitelisting software) and USB Pratirodh (USB device control). These tools aim to enhance digital hygiene among Indian users.
+    </p>
+    <a href="#" class="flex items-center text-primary hover:underline">
+      <img aria-hidden="true" alt="link" src="https://openui.fly.dev/openui/24x24.svg?text=🔗" class="mr-2" />
+      Cyber Swachhta Kendra - Official Site
+    </a>
+  </div>
+  <div>
+    <h2 class="text-xl font-semibold">6. WiJungle</h2>
+    <p class="text-muted-foreground">
+      WiJungle is an Indian cybersecurity solution that combines multiple network security products into a single platform. It provides a unified network security gateway that includes a firewall, VPN, web filtering, bandwidth management, and data loss prevention (DLP). WiJungle is suitable for enterprises, government organizations, and service providers.
+    </p>
+    <a href="#" class="flex items-center text-primary hover:underline">
+      <img aria-hidden="true" alt="link" src="https://openui.fly.dev/openui/24x24.svg?text=🔗" class="mr-2" />
+      WiJungle - Official Site
+    </a>
+  </div>
+  <footer class="mt-8 text-center text-muted-foreground">
+    <p>An initiative of Masoom by Young Indians</p>
+  </footer>
+</div>
+  </body>
+</html>
+
+
+  </body>
+</html>
+
+</html>
+</div>
+
+<button class="bg-primary text-primary-foreground p-2 rounded-lg w-full">SUBMIT</button>
+  </body>
+</html>
+  </body>
+</html>
+  </body>
+</html>
+  </body>
+</html>
+
+  </body>
+</html>
